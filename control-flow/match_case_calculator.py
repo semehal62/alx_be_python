@@ -19,3 +19,5 @@ match operation:
       print("Cannot divide by zero.")
     else:
       result = num1 / num2
+
+print("The result is ",result,".")
