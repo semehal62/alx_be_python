@@ -1,6 +1,6 @@
 def safe_divide(numerator, denominator):
-    numerator = float(numerator)
-    denominator = float(demominator)
+    float(numerator)
+    float(denominator)
     try:
         result = numerator / denominator
 
