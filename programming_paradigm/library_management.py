@@ -1,7 +1,7 @@
 class Book:
     def __init__ (self, title, author, _is_checked_out):
         self.title =  title
-        self.title = author
+        self.author = author
         self.__is_checked_out =  _is_checked_out
 
 
