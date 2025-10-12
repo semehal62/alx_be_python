@@ -30,8 +30,11 @@ class Lirary:
     self.books.append(book)
     
   def list_books(self,Book,EBook,PrintBook):
-    for book in self.books:
-      print(f"{book}"
+    if not self.books:
+            print("No books in the library.")
+    else:
+       for book in self.books:
+         print(f"{book}"
 
 
 
