@@ -1,16 +1,15 @@
-import sys
-from robust_division_calculator import safe_divide
+def safe_divide(numerator, denominator):
+    try:
+        result = numerator / denominator
 
-def main():
-    if len(sys.argv) != 3:
-        print("Usage: python main.py <numerator> <denominator>")
-        sys.exit(1)
+    except ZeroDivisionError as e:
+        print(f"Error: cannot divied by zero.")
+    except ValueError as e:
+        print(f"Error: {e}")
+    except TypeError :
+        print(f"Error: Please enter numeric values only.")
+    else:
+        print(f"The result of the division is {result}")
+    
 
-    numerator = sys.argv[1]
-    denominator = sys.argv[2]
 
-    result = safe_divide(numerator, denominator)
-    print(result)
-
-if __name__ == "__main__":
-    main()
