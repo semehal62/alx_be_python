@@ -1,4 +1,4 @@
-class Book():
+class Book:
     def __init__ (self, title,author, _is_checked_out):
         self.title =  title
         self.title = author
@@ -6,7 +6,7 @@ class Book():
 
 
 
-class Library():
+class Library:
     def __init__(self,_books):
         self.books = books
     
