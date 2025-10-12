@@ -22,19 +22,19 @@ class PrintBook(Book):
   def __str__(self):
     return f"PrintBook: {self.title} by {self.author}, page count: {self.page_count}"
     
-class Lirary:
+class Library:
   def __init__(self):
     self.books = []
 
   def add_book(self, book):
     self.books.append(book)
     
-  def list_books(self,Book,EBook,PrintBook):
+  def list_books(self):
     if not self.books:
         print("No books in the library.")
     else:
         for book in self.books:
-         print(f"{book}"
+         print(f"{book}")
 
 
 
