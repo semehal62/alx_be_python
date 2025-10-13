@@ -3,7 +3,7 @@ from simple_calculator import SimpleCalculator
 
 class test_Simplecalculator(unitest.TestCase)
     SimpleCalculator = SimpleCalculator()
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual( SimpleCalculator.add(10,5),15)
         self.assertEqual( SimpleCalculator.add(-1,5),4)
         self.assertEqual( SimpleCalculator.add(0,0),0)
